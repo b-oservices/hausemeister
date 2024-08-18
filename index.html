@@ -1,501 +1,681 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link href="css/main.css" rel="stylesheet">
 
-  <script src="js/bootstrap.min.js"></script>
-  <title>Acceuil</title>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>B&O Services</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
   
 </head>
-<header>
-<div class="branding d-flex align-items-center">
 
-  <div class="container position-relative d-flex align-items-center justify-content-between">
-    <a href="index.html" class="logo d-flex align-items-center me-auto">
-      <!-- Uncomment the line below if you also wish to use an image logo -->
-      <img src="image/photo_2024-05-18_11-29-49" alt=""> 
-      <h1 class="sitename">B&O services</h1>
-    </a>
+<body class="index-page">
 
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="index.html" class="active">Acceuil<br></a></li>
-        <li><a href="html/connexion.html">Connexion</a></li>
-        <li><a href="html/tarifs.html">Services</a></li>
-        <li><a href="#footer">Contact</a></li>
-      </ul>
-      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-    </nav>
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
-  </div>
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="image/photo_2024-05-18_11-29-49" alt="">
+        <h1 class="sitename">B&O Services</h1><span>.</span>
+      </a>
 
-</div>
-</header>
-<main>
-  <div class="bloc2">
-    <section class="py-5 text-center container ">
-      <div class="row py-lg-5">
-        <div class="col-lg-6 col-md-8 mx-auto">
-          <h1 class="fw-light"> Services de nettoyage professionnel pour votre maison ou votre bureau.</h1>
-          <p class="lead text-body-secondary">Nous offrons des services de nettoyages complets pour les <br> particulier et les entreprises à base d'ingredients naturels
-            <br> Disponible 6j/7, desencombrement 20 à 30 EUR/h.</p>
-          <p>
-            <a href="mailto:olivier.bomombe@yahoo.com?subject=Sujet&body=Je veux obtenir un devis" class="btn btn-primary my-2"  style="background-color: #04697B; color: white">Obtenir un devis!</a>
-          </p>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero" class="active">Menu</a></li>
+          <li><a href="index.html#about">A propos</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#portfolio">realisations</a></li>
+          <li><a href="index.html#pricing">Tarifs</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="index.html#about">commencez !</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="image/IMG-20240228-WA0087.jpg" alt="" data-aos="fade-in">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10">
+            <h2 data-aos="fade-up" data-aos-delay="100">Bienvenue sur notre site</h2>
+            <p data-aos="fade-up" data-aos-delay="200">Services de nettoyage professionnel pour votre maison ou votre bureau.</p>
+          </div>
+          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="300">
+            <form action="forms/newsletter.php" method="post" class="php-email-form">
+              <div class="sign-up-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+              <div class="loading">Chargement</div>
+              <div class="error-message"></div>
+              <div class="sent-message">votre soupscrition a été envoyé, merci!</div>
+            </form>
+          </div>
         </div>
       </div>
-    </section>
-  </div>
-  <div class="album py-5 bg-body-tertiary">
-    <div class="container">
 
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col">
-          <div class="card shadow-sm">
+    </section><!-- /Hero Section -->
 
-            <div class="card-body">
-              <p class="card-text">Nettoyage de vitres</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">B&O</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Services</button>
+  
+
+    <!-- About Section -->
+    <section id="about" class="about section light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-xl-center gy-5">
+
+          <div class="col-xl-5 content">
+            <h3>A propos de nous</h3>
+            <h2>Disponible 6j/7, desencombrement 20 à 30 EUR/h.</h2>
+            <p>Nous offrons des services de nettoyages complets pour les <br> particulier et les entreprises à base d'ingredients naturels.</p>
+            <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+
+          <div class="col-xl-7">
+            <div class="row gy-4 icon-boxes">
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon-box">
+                  <i class="bi bi-buildings"></i>
+                  <h3>1. Qualité et professionnalisme</h3>
+                  <p>B&O Services se distingue par son engagement envers la qualité et le professionnalisme de ses services de nettoyage.</p>
                 </div>
-                <small class="text-body-secondary">new</small>
+              </div> <!-- End Icon Box -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box">
+                  <i class="bi bi-clipboard-pulse"></i>
+                  <h3>2. Durabilité et respect de l'environnement</h3>
+                  <p>B&O Services se démarque en utilisant des produits de nettoyage écologiques et en mettant en place des pratiques respectueuses de l'environnement.</p>
+                </div>
+              </div> <!-- End Icon Box -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box">
+                  <i class="bi bi-command"></i>
+                  <h3>3. Service personnalisé et flexible</h3>
+                  <p>B&O Service offre un service personnalisé et flexible adapté aux besoins de chaque client.</p>
+                </div>
+              </div> <!-- End Icon Box -->
+
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /About Section -->
+
+   
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>B&O services propose une gamme variée de services destinés à maintenir des espaces propres, hygiéniques et accueillants.
+           Ces services peuvent s'adapter à différents types de locaux et à des besoins spécifiques.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-window"></i></div>
+              <div>
+                <h4 class="title"><a class="stretched-link">Nettoyage de vitres</a></h4>
+                <p class="description">Le nettoyage de vitres est une tâche qui requiert minutie et savoir-faire pour obtenir un résultat sans trace et une transparence parfaite. Que ce soit pour des vitres en hauteur, des baies vitrées, des miroirs ou des vitrines de magasin,
+                   un nettoyage régulier est essentiel pour maintenir un environnement propre et esthétique.</p>
               </div>
             </div>
           </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-office"></i></div>
+              <div>
+                <h4 class="title"><a  class="stretched-link">Nettoyage d'espace de travail</a></h4>
+                <p class="description">Le nettoyage d'un espace de travail est essentiel pour maintenir un environnement sain, agréable et propice à la concentration.
+                   Un bureau propre favorise la productivité, réduit le stress et améliore l'image de votre entreprise.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-buildings"></i></div>
+              <div>
+                <h4 class="title"><a class="stretched-link">Nettoyage des locaux commerciaux</a></h4>
+                <p class="description">Le nettoyage des locaux commerciaux est bien plus qu'une simple tâche ménagère. Il s'agit d'un élément essentiel pour maintenir une image professionnelle,
+                   assurer le confort de vos clients et employés, et garantir un environnement de travail sain et sécurisé.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
+              <div>
+                <h4 class="title"><a  class="stretched-link">Nettoyage de batimentss</a></h4>
+                <p class="description">Le nettoyage de bâtiments est un service essentiel pour maintenir un environnement sain, propre et accueillant, que ce soit pour des bureaux, des commerces, des industries ou des bâtiments publics.
+                   Il englobe un ensemble de tâches visant à assurer l'hygiène et l'entretien des locaux, des équipements et des espaces extérieurs.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
+              <div>
+                <h4 class="title"><a class="stretched-link">Nettoyage de chantier</a></h4>
+                <p class="description">Le nettoyage de chantier est une étape cruciale à la fin de tout projet de construction ou de rénovation. 
+                  Il consiste à remettre les locaux en état de propreté et d'hygiène, en éliminant tous les déchets et résidus de travaux.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-house-door"></i></div>
+              <div>
+                <h4 class="title"><a class="stretched-link">Nettoyage des escaliers</a></h4>
+                <p class="description">Le nettoyage des escaliers est une tâche ménagère qui peut sembler fastidieuse, mais qui est essentielle pour maintenir un intérieur propre et accueillant. En fonction du matériau de votre escalier (bois, pierre, carrelage, etc.), les techniques de nettoyage différeront.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-graph-up-arrow"></i></div>
+              <div>
+                <h4 class="title"><a class="stretched-link">Nettoyage d'entretien</a></h4>
+                <p class="description">Le nettoyage d'entretien est une opération régulière visant à maintenir un environnement propre et hygiénique dans des locaux professionnels, commerciaux ou privés. Il s'agit d'une prestation essentielle pour préserver la qualité de vie et le bien-être des occupants, ainsi que l'image de marque d'une entreprise.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-broom"></i></div>
+              <div>
+                <h4 class="title"><a class="stretched-link">Nettoyage de Base</a></h4>
+                <p class="description">Le nettoyage de base est la pierre angulaire de l'entretien ménager. Il consiste en un ensemble de tâches récurrentes visant à maintenir un niveau d'hygiène satisfaisant dans un logement ou un espace de travail.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+          <div class="col-lg-6 " data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-brush"></i></div>
+              <div>
+                <h4 class="title"><a class="stretched-link">Nettoyage de façade</a></h4>
+                <p class="description">Le nettoyage de façade est une opération qui consiste à éliminer les salissures, la pollution, les mousses, les lichens et autres dépôts qui se fixent sur les murs extérieurs d'un bâtiment. Il permet de préserver l'esthétique du bâtiment, d'augmenter sa durée de vie et d'améliorer l'isolation thermique.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
         </div>
-        <div class="col">
-          <div class="card shadow-sm">
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Realisations</h2>
+        <p>Nos équipes ont permis d'optimiser ces espaces de travail grâce à un nettoyage méticuleux et régulier. En adaptant nos interventions à leurs besoins spécifiques, nous avons contribué à améliorer la productivité et le bien-être de leurs collaborateurs</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">1</li>
+            <li data-filter=".filter-app">2</li>
+            <li data-filter=".filter-product">3</li>
+            <li data-filter=".filter-branding">4</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="image/IMG-20240228-WA0086.jpg" class="img-fluid" alt="">
+             
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="image/IMG-20240228-WA0083.jpg" class="img-fluid" alt="">
+              
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="image/IMG-20240228-WA0085.jpg" class="img-fluid" alt="">
+              
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="image/IMG-20240721-WA0045.jpg" class="img-fluid" alt="">
+              
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="image/IMG-20240721-WA0044.jpg" class="img-fluid" alt="">
+              
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="image/IMG-20240721-WA0043.jpg" class="img-fluid" alt="">
+             
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="image/IMG-20240721-WA0042.jpg" class="img-fluid" alt="">
+             
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="image/IMG-20240721-WA0041.jpg" class="img-fluid" alt="">
+             
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="image/IMG-20240721-WA0040.jpg" class="img-fluid" alt="">
+             
+            </div><!-- End Portfolio Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="image/IMG-20240721-WA0039.jpg" class="img-fluid" alt="">
+             
+            </div><!-- End Portfolio Item -->
+         
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+            <img src="image/IMG-20240721-WA0038.jpg" class="img-fluid" alt="">
+          </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="image/IMG-20240703-WA0074.jpg" class="img-fluid" alt="">
+             
+            </div><!-- End Portfolio Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="image/IMG-20240703-WA0075.jpg" class="img-fluid" alt="">
+             
+            </div><!-- End Portfolio Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="image/IMG-20240703-WA0076.jpg" class="img-fluid" alt="">
+            </div><!-- End Portfolio Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="image/IMG-20240703-WA0077.jpg" class="img-fluid" alt="">
+             
+            </div><!-- End Portfolio Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="image/IMG-20240703-WA0078.jpg" class="img-fluid" alt="">
+             
+            </div><!-- End Portfolio Item -->
+          </div><!-- End Portfolio Item -->
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+            <img src="image/IMG-20240703-WA0079.jpg" class="img-fluid" alt="">
+          </div><!-- End Portfolio Item -->
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+            <img src="image/IMG-20240703-WA0080.jpg" class="img-fluid" alt="">
            
-            <div class="card-body">
-              <p class="card-text">Nettoyage d'espace de travail</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">B&O</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Services</button>
-                </div>
-                <small class="text-body-secondary">new</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            
-            <div class="card-body">
-              <p class="card-text">Nettoyage des locaux commerciaux</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">B&O</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Services</button>
-                </div>
-                <small class="text-body-secondary">new</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card shadow-sm">
+          </div><!-- End Portfolio Item -->
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+            <img src="iimage/IMG-20240703-WA0081.jpg" class="img-fluid" alt="">
            
-            <div class="card-body">
-              <p class="card-text">Nettoyage de batiments</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">B&O</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Services</button>
-                </div>
-                <small class="text-body-secondary">new</small>
+          </div><!-- End Portfolio Item -->
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+            <img src="image/IMG-20240703-WA0082.jpg" class="img-fluid" alt="">
+          </div><!-- End Portfolio Item -->
+          </div><!-- End Portfolio Container -->
+
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Tarifs</h2>
+        <p>Nos tarifs sont établis sur mesure, en fonction de vos besoins spécifiques. Que vous ayez besoin d'un nettoyage ponctuel ou d'un contrat d'entretien régulier, nous vous proposons un devis détaillé et adapté à votre budget.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="zoom-in" data-aos-delay="90">
+
+        <div class="row g-4">
+
+          <div class="col-lg-4">
+            <div class="pricing-item">
+              <h3>Nettoyage de l'appartement</h3>
+              <div class="icon">
+                <i class="bi bi-box"></i>
               </div>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>1,20 € à 2,50 €/mètre carré</span></li>
+                <li><i class="bi bi-check"></i> <span>Tapis : 3 à 4 €/mètre carré</span></li>
+                <li><i class="bi bi-check"></i> <span>Coin salon de six places : 150 à 200 €</span></li>
+                <li class=""><i class="bi bi-check"></i> <span>Désencombrement</span></li>
+                <li class=""><i class="bi bi-chevron-right"></i> <span>40 à 30 € par heure</span></li>
+                <li><i class="bi bi-check"></i> <span>Appartement</span></li>
+                <li><i class="bi bi-chevron-down"></i> <span>60 m2 : 1400 €</span></li>
+                <li><i class="bi bi-chevron-down"></i> <span>120 m2 : 2640 €</span></li>
+                <li><i class="bi bi-check"></i> <span>Garage-- 10 m2 : 230 €</span></li>
+                <li><i class="bi bi-check"></i> <span>Sous-sol -- 18 m2 : 460 €</span></li>
+                <li><i class="bi bi-check"></i> <span>Jardinier -- 58 à 72 € de l'heure</span></li>
+                <li><i class="bi bi-check"></i> <span>Nettoyage de construction</span></li>
+                <li><i class="bi bi-chevron-down"></i> <span>30 à 35 € de l'heure</span></li>
+                <li><i class="bi bi-check"></i> <span>Désencombrement d'appartement</span></li>
+                <li><i class="bi bi-chevron-down"></i> <span>Sous-sol (15 m²) : 300 € (petits déchets), 700 € (déchets encombrants moyens) <br>
+                  Appartement deux chambres (40 m²) : 800 € (peu d'ordures), 1200 € (déchets encombrants moyens)<br>
+                  Grenier (25 m²) : 500 € (petits déchets), 1000 € (déchets encombrants moyens)</span>
+                  <li><i class="bi bi-check"></i> <span>Appartement deux pièces (100 m²)</span></li>
+                  <ul>
+                  <li>Peu d'ordures : 1800 €</li>
+                  <li>Déchets encombrants moyens : 3100 €</li>
+                </ul>
+              </ul>
+              <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
             </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-      
-            <div class="card-body">
-              <p class="card-text">Nettoyage de chantier</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">B&O</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Services</button>
-                </div>
-                <small class="text-body-secondary">new</small>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4">
+            <div class="pricing-item featured">
+              <h3>Nettoyage de l'exterieur</h3>
+              <div class="icon">
+                <i class="bi bi-rocket"></i>
               </div>
+                
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Entretien de la pelouse</span></li>
+                <ul>
+                  <li>0,10 € à 0,30 € le m²</li>
+                </ul>
+                <li><i class="bi bi-check"></i> <span> Entretien des arbres</span></li>
+                <ul>
+                  <li>Élagage : 35 à 45 € de l'heure</li>
+                  <li>Arbre grimpant : 60 € de l'heure</li>
+                  <li>Arbre fruitier : 30 à 180 € de l'heure</li>
+                  <li>Cerisier : 70 € le mètre</li>
+                </ul>
+                <li><i class="bi bi-check"></i> <span>Déneigement</span></li>
+                <ul>
+                  <li>À la main : 1 à 9 € le m²</li>
+                  <li>À la machine : 1 à 7 € le m²</li>
+                  <li>Par heure : 20 à 50 €</li>
+                  <li>Maison jumelée : 25 à 80 € le mètre</li>
+                  <li>Maison multifamiliale : 30 à 80 € le mètre</li>
+                  <li>Jusqu'à 15 m² : 1,50 € le m²</li>
+                  <li>Jusqu'à 25 m² : 1,20 € le m²</li>
+                  <li>Jusqu'à 35 m² : 1,00 € le m²</li>
+                </ul>
+                <li><i class="bi bi-check"></i> <span>Nettoyage de façade</span></li>
+                <ul>
+                  <li>5 à 35 € le m²</li>
+                </ul>
+
+                <li><i class="bi bi-check"></i> <span>Coûts de départ </span></li>
+                  <ul>
+                    <li>1 € le kilomètre</li>
+                    <li>Jusqu'à 15 km : 22 €</li>
+                    <li>Jusqu'à 30 km : 32 €</li>
+                    <li>Jusqu'à 60 km : 44 €</li>
+                  </ul>
+               
+              </ul>
+              <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
             </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-           
-            <div class="card-body">
-              <p class="card-text">Nettoyage des escaliers</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">B&O</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Services</button>
-                </div>
-                <small class="text-body-secondary">new</small>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4">
+            <div class="pricing-item">
+              <h3>Autres nettoyages</h3>
+              <div class="icon">
+                <i class="bi bi-send"></i>
               </div>
+
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Nettoyage de tapis</span></li>
+                
+              <ul>
+                <li>5 à 20 € le m²</li>
+              </ul>
+                <li><i class="bi bi-check"></i> <span>Nettoyage intensif des sols</span></li>
+              <ul>
+                <li>3,50 à 4,50 € le m²</li>
+              </ul>
+                <li><i class="bi bi-check"></i> <span>Nettoyage des sols en pierre</span>
+                  <ul>
+                    <li>À partir de 9 € le m²</li>
+                  </ul>
+                  
+                </li>
+
+                <li><i class="bi bi-check"></i> <span>Ménage de base</span></li>
+              <ul>
+                <li>25 à 29,75 € de l'heure</li>
+              </ul> 
+                <li><i class="bi bi-check"></i> <span>Cabinet médical</span></li>
+                <ul>
+                  <li>25 à 30 € de l'heure</li>
+                </ul>
+                <li><i class="bi bi-check"></i> <span>Nettoyage des cages d'escalier</span></li>
+                <ul>
+                  <li>25 à 30 € de l'heure</li>
+                </ul>
+              </ul>
+              <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
             </div>
-          </div>
+          </div><!-- End Pricing Item -->
+
         </div>
 
-        <div class="col">
-          <div class="card shadow-sm">
-            
-            <div class="card-body">
-              <p class="card-text">Nettoyage d'entretien</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">B&O</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Services</button>
+      </div>
+
+    </section><!-- /Pricing Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>nous sommes toujours proches de vous!
+        </p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6">
+
+            <div class="row gy-4">
+              <div class="col-md-6">
+                <div class="info-item" data-aos="fade" data-aos-delay="200">
+                  <i class="bi bi-geo-alt"></i>
+                  <h3>Address</h3>
+                  <p>03149 Forst(Lausitz)</p>
+                  <p>Allemagne</p>
                 </div>
-                <small class="text-body-secondary">new</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            
-            <div class="card-body">
-              <p class="card-text">Nettoyage de Base</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">B&O</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Services</button>
+              </div><!-- End Info Item -->
+
+              <div class="col-md-6">
+                <div class="info-item" data-aos="fade" data-aos-delay="300">
+                  <i class="bi bi-telephone"></i>
+                  <h3>Appelez nous</h3>
+                  <p>+4915147758268</p>
                 </div>
-                <small class="text-body-secondary">new</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm" >
+              </div><!-- End Info Item -->
 
-            <div class="card-body">
-              <p class="card-text">Nettoyage de façade</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">B&O</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Services</button>
+              <div class="col-md-6">
+                <div class="info-item" data-aos="fade" data-aos-delay="400">
+                  <i class="bi bi-envelope"></i>
+                  <h3>Email</h3>
+                  <p> olivier.bomombe@yahoo.com</p>
                 </div>
-                <small class="text-body-secondary">new</small>
-              </div>
+              </div><!-- End Info Item -->
+
+              <div class="col-md-6">
+                <div class="info-item" data-aos="fade" data-aos-delay="500">
+                  <i class="bi bi-clock"></i>
+                  <h3>Open Hours</h3>
+                  <p>7j/7</p>
+                  <p>24h/24</p>
+                </div>
+              </div><!-- End Info Item -->
+
             </div>
+
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="carouselExampleCaptions" class="carousel slide">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9" aria-label="Slide 10"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="10" aria-label="Slide 11"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="11" aria-label="Slide 12"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="12" aria-label="Slide 13"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="13" aria-label="Slide 14"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="14" aria-label="Slide 15"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="15" aria-label="Slide 16"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="16" aria-label="Slide 17"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="image/IMG-20240228-WA0086.jpg" class="image-carousel"  alt="" >
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Nettoyage</h5>
-          <p>Notre passage dans cette cuisine, nous l'avons rendu impeccable, elle est au sommet de sa propreté.</p>
-        </div>
-      </div>
-      <div class="carousel-item card shadow-sm">
-        <img src="image/IMG-20240228-WA0083.jpg"  class="image-carousel"  alt="">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Passage de notre employé</h5>
-          <p>on fait un travail essentielle et satisfaisant dans le domaine du Nettoyage.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="image/IMG-20240228-WA0085.jpg" class="image-carousel"  alt="" >
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Terrain apres notre passage</h5>
-          <p>Nous avons finalement nettoyer ce jardin</p>
-        </div>
-      </div>`
-      <div class="carousel-item">
-        <img src="image/IMG-20240721-WA0045.jpg" class="image-carousel"  alt="">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>HFOU</h5>
-          <p>UYOI</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="image/IMG-20240721-WA0044.jpg" class="image-carousel"  alt="">
-        <div class="carousel-caption d-none d-md-block">
-          <h5></h5>
-          <p></p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="image/IMG-20240721-WA0043.jpg" class="image-carousel"  alt="">
-        <div class="carousel-caption d-none d-md-block">
-          <h5></h5>
-          <p></p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="image/IMG-20240721-WA0042.jpg" class="image-carousel"  alt="">
-        <div class="carousel-caption d-none d-md-block">
-          <h5></h5>
-          <p></p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="image/IMG-20240721-WA0041.jpg" class="image-carousel"  alt="">
-        <div class="carousel-caption d-none d-md-block">
-          <h5></h5>
-          <p></p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="image/IMG-20240721-WA0040.jpg" class="image-carousel"  alt="">
-        <div class="carousel-caption d-none d-md-block">
-          <h5></h5>
-          <p></p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="image/IMG-20240721-WA0039.jpg" class="image-carousel"  alt="">
-        <div class="carousel-caption d-none d-md-block">
-          <h5></h5>
-          <p></p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="image/IMG-20240721-WA0038.jpg" class="image-carousel"  alt="">
-        <div class="carousel-caption d-none d-md-block">
-          <h5></h5>
-          <p></p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="image/IMG-20240703-WA0074.jpg" class="image-carousel"  alt="">
-        <div class="carousel-caption d-none d-md-block">
-          <h5></h5>
-          <p></p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="image/IMG-20240703-WA0075.jpg" class="image-carousel"  alt="">
-        <div class="carousel-caption d-none d-md-block">
-          <h5></h5>
-          <p></p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="image/IMG-20240703-WA0076.jpg" class="image-carousel"  alt="">
-        <div class="carousel-caption d-none d-md-block">
-          <h5></h5>
-          <p></p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="image/IMG-20240703-WA0077.jpg" class="image-carousel"  alt="">
-        <div class="carousel-caption d-none d-md-block">
-          <h5></h5>
-          <p></p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="image/IMG-20240703-WA0078.jpg" class="image-carousel"  alt="">
-        <div class="carousel-caption d-none d-md-block">
-          <h5></h5>
-          <p></p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="image/IMG-20240703-WA0079.jpg" class="image-carousel"  alt="">
-        <div class="carousel-caption d-none d-md-block">
-          <h5></h5>
-          <p></p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="image/IMG-20240703-WA0080.jpg" class="image-carousel"  alt="">
-        <div class="carousel-caption d-none d-md-block">
-          <h5></h5>
-          <p></p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="image/IMG-20240703-WA0081.jpg" class="image-carousel"  alt="">
-        <div class="carousel-caption d-none d-md-block">
-          <h5></h5>
-          <p></p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="image/IMG-20240703-WA0082.jpg" class="image-carousel"  alt="">
-        <div class="carousel-caption d-none d-md-block">
-          <h5></h5>
-          <p></p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="image/IMG-20240703-WA0083.jpg" class="image-carousel"  alt="">
-      <div class="carousel-caption d-none d-md-block">
-          <h5></h5>
-          <p></p>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  <div class="container px-4 py-5" id="custom-cards">
-    <h2 class="pb-2 border-bottom">Bon à Savoir</h2>
 
-    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('image/_0a1d58b9-133a-47b0-83fc-9d7a68e99b08.jpeg'); background-position: 50% 50%;">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1" style="font-size: 20px;">B&O Services se distingue par son engagement envers la qualité et le professionnalisme de ses services de nettoyage.
-            </h3>
-            <ul class="d-flex list-unstyled mt-auto">
-              <li class="me-auto">
-              </li>
-              <li class="d-flex align-items-center me-3">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
-                <p class="fw-bold" style="background-color: #04697B; text-align: center; border: #04697B 1px solid; border-radius: 5px;">1. Qualité et professionnalisme</p>
-              </li>
-              <li class="d-flex align-items-center">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
-                <small></small>
-              </li>
-            </ul>
-          </div>
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
         </div>
+
       </div>
 
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('image/_cb659e06-72e9-4a1f-8818-1423016bd3ba.jpeg'); background-position: 50% 50%;">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1" style="font-size: 20px;"> B&O Services se démarque en utilisant des produits de nettoyage écologiques et en mettant en place des pratiques respectueuses de l'environnement.</h3>
-            <ul class="d-flex list-unstyled mt-auto">
-              <li class="me-auto">
-              </li>
-              <li class="d-flex align-items-center me-3">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
-                <p class="fw-bold"   style="background-color: #04697B;text-align: center; border: #04697B 1px solid; border-radius: 5px;">2. Durabilité et respect de l'environnement</p>
-              </li>
-              <li class="d-flex align-items-center">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
-                <small></small>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('image/_f0ec7210-8ed4-4a31-996f-6902b8f7d2ed.jpeg'); background-position: 75% 25%;">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1" style="font-size: 20px;  color: black; font-weight: bold; text-align: center;">B&O Service offre un service personnalisé et flexible adapté aux besoins de chaque client.</h3>
-            <ul class="d-flex list-unstyled mt-auto">
-              <li class="me-auto">
-              </li>
-              <li class="d-flex align-items-center me-3">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
-                <p class="fw-bold" style="background-color: #04697B; text-align: center; border: #04697B 1px solid; border-radius: 5px; ">3. Service personnalisé et flexible</p>
-              </li>
-              <li class="d-flex align-items-center">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
-                <small></small>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </section><!-- /Contact Section -->
 
   </main>
 
+  <footer id="footer" class="footer position-relative light-background">
 
-<footer class="text-body-secondary py-5">
-  <div class="container">
-    <p class="float-end mb-1">
-      olivier.bomombe@yahoo.com <br>
-      03149 Forst(Lausitz)   <a href="">+4915147758268</a>.
-    </p>
-    <p> WA +4917693713563</p>
-    <p class="mb-1"> &copy; 2024 B&O services, Inc</p>
-  
-  </div>
-</footer>
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">B&O Services</span>
+          </a>
+          <p>Votre service de nettoyage proche de chez vous.</p>
+          <div class="social-links d-flex mt-4">
+            <a href="https://wa.me/+4917693713563"><i class="bi bi-whatsapp"></i></a>
+            
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="index.html">Menu</a></li>
+            <li><a href="#About">Apropos</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contactez Nous</h4>
+          <p>03149 Forst(Lausitz)</p>
+          <p>Allemagne</p>
+          <p class="mt-4"><strong>Phone:</strong> <span>+4915147758268</span></p>
+          <p><strong>Email:</strong> <span>olivier.bomombe@yahoo.com</span></p>
+        </div>
+
+      </div>
+    </div>
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="sitename">B&O Services</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        Designed by <a href="https://wa.me/+237698479649">Joress FOTSO</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
-</html>
 
+</html>
